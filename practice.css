@@ -1,0 +1,131 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a1a1a; /* Matches dark background */
+  color: #fff;
+}
+
+.logo-img {
+  height: 40px; /* Adjust based on your logo size */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-buttons .btn {
+  margin-left: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.login {
+  background-color: #000; /* Darker button */
+  color: #fff;
+}
+
+.create {
+  background-color: #f1c40f; /* Yellow button */
+  color: #000;
+}
+
+.nav-toggle {
+  display: none; /* Hidden checkbox */
+}
+
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.navlinkcont {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Media Query for Mobile (max-width: 400px) */
+@media screen and (max-width: 400px) {
+  .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .short {
+    display: none;
+  }
+
+  .navlinkcont {
+    display: none; /* Hide links and buttons by default */
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Match navbar */
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-buttons .btn {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  /* Show links and buttons when checkbox is checked */
+  .nav-toggle:checked ~ .navlinkcont,
+  .nav-toggle:checked ~ .nav-buttons {
+    display: flex;
+  }
+
+  /* Animate hamburger to 'X' */
+  .nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>My WEB</title>
+
+    <style>
+        #container{
+            width: 1020px;
+            height: 600px;
+            margin: 0%;
+        }
+        #parent1{
+            width: 500px;
+            height: 600px;
+            float: left;
+            margin-right: 20px;
+        }
+        #child1{
+            width: 500px;
+            height: 170px;
+            background-color: teal;
+            margin-bottom: 20px;
+        }
+        #child2{
+            width: 500px;
+            height: 410px;
+        }
+        #grand_child1{
+            width: 120px;
+            height: 420px;
+            float: left;
+            margin-right: 20px;
+            background-color: aqua;
+        }
+        #grand_child2{
+            width: 360px;
+            height: 420px;
+            float: right;
+            background-color: aqua;
+        }
+        #parent2{
+            width: 500px;
+            height: 600px;
+            float: left;
+        }
+        #child3{
+            width: 150px;
+            height: 420px;
+            margin-bottom: 20px;
+            background-color: aqua;
+        }
+        #child4{
+            width: 490px;
+            height: 170px;
+            background-color: teal;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="parent1">
+            <div id="child1"></div>
+            <div id="child2">
+                <div id="grand_child1"></div>
+                <div id="grand_child2"></div>
+            </div>
+        </div>
+        <div id="parent2">
+            <div id="child3"></div>
+            <div id="child4"></div>
+        </div>
+    </div>
+</body>
+</html>

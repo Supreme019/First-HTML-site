@@ -1,0 +1,53 @@
+#container{
+            width: 1200px;
+            height: 600px;
+            margin: 0;
+        }
+        #parent1{
+            width: 400px;
+            height: 600px;
+            background-color: rgb(77, 26, 26);
+            float: left;
+            margin-right: 10px;
+        }
+        #parent2{
+            width: 790px;
+            height: 600px;
+            float: right;
+        }
+        #child1{
+            width: 790px;
+            height: 140px;
+            background-color: darkorchid;
+            margin-bottom: 10px;
+        }
+        #child2{
+            width: 790px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        #grand_child1{
+            width: 390px;
+            height: 150px;
+            background-color: darkgreen;
+            float: right;
+            margin-left: 10px;
+            
+        }
+        #grand_child2{
+            width: 390px;
+            height: 150px;
+            background-color: deeppink;
+            float: left;
+        }
+        #child3{
+            width: 790px;
+            height: 140px;
+            background-color: chocolate;
+            margin-bottom: 10px;
+        }
+        #child4{
+            width: 790px;
+            height: 140px;
+            background-color: blue;
+        }

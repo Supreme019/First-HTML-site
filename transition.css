@@ -1,0 +1,113 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 0.6s ease 0.3s;
+}
+.box:hover{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.parent{
+    width: 100px;
+    height: 100px;
+    color: red;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+}
+
+.parent:hover {
+    width: 100px;
+    height: 100px;
+    color: rgb(0, 255, 21);
+    border: 2px solid rgb(72, 173, 85);
+} 
+.parent p{
+    font-size: 15px;
+    color: red;
+    transition: all 0.3s ease;
+}
+.text2{
+    display: none;
+    transition: all 0.3s ease;
+}
+.parent:hover .text1{
+    display: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.parent:hover .text2{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    color: rgb(0, 255, 55);
+    transition: all 1s ease;
+}
+
+.tosin{
+    width: 100px;
+    height: 100px;
+    color: blue;
+    border: 2px solid blue;
+    transition: all 0.3s ease;
+}
+.tosin:hover{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    color: red;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+    transform: rotate(50deg);
+}
+.child{
+    width:52px;
+    height: 50px;
+    padding: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-inline: 10px;
+}
+.grand-child1{
+    width: 50px;
+    height: 44px;
+    background-color: rgb(240, 37, 37);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.child input{
+    display: none;
+    height: 40px;
+}
+.child:hover input{
+    display: flex;
+    transition: all 1s ease;
+}
+.child button{
+    display: none;
+    height: 40px;
+    align-items: center;
+}
+.child:hover button{
+    display: flex;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.child:hover form{
+    width: 213px;
+    height: 50px;
+    background-color: rgb(0, 139, 81);
+    padding: 3px;
+    display: flex;
+    transition: all 1s ease;
+    align-items: center;
+    gap: 5px;
+    transform: translate3d(20px);
+}
+.child:hover .grand-child1{
+    display: none;
+}

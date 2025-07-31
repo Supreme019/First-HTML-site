@@ -1,0 +1,20 @@
+.container{
+    background-color: rgba(3, 192, 192, 0.521);
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.897);
+    color: green;
+}
+h2{
+    
+}
+.audio{
+    color: blue;
+    float: left;
+}
+.video{
+    float: right;
+    color: goldenrod;
+}
